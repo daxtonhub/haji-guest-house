@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Haji Guest House Bhagalpur — Budget stay near Railway Station from ₹749/night. Book online for 25% OFF." />
+  <meta name="keywords" content="guest house bhagalpur, hotel near bhagalpur railway station, budget hotel bhagalpur, haji guest house" />
+  <meta property="og:title" content="Haji Guest House | ₹749/Night | Near Bhagalpur Railway Station" />
+  <meta property="og:description" content="Clean, affordable stay near Bhagalpur Railway Station. Book online for 25% OFF — just ₹749/night." />
+  <title>Haji Guest House | ₹749/Night | Near Bhagalpur Railway Station</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: #ffffff;
+      color: #1c1917;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Custom font classes — replaces tailwind.config fontFamily */
+    .font-display { font-family: 'Playfair Display', serif !important; }
+    .font-sans    { font-family: 'DM Sans', sans-serif !important; }
+
+    /* ── Announcement bar shimmer ── */
+    .announcement-bar {
+      background: linear-gradient(90deg, #78350f 0%, #d97706 35%, #f59e0b 55%, #b45309 75%, #78350f 100%);
+      background-size: 300% 100%;
+      animation: shimmer 5s linear infinite;
+    }
+    @keyframes shimmer {
+      0%   { background-position: 200% center; }
+      100% { background-position: -200% center; }
+    }
+
+    /* ── Hero ── */
+    .hero-gradient {
+      background: linear-gradient(145deg, #78350f 0%, #a16207 50%, #d97706 100%);
+    }
+    .hero-dot-pattern {
+      background-image: radial-gradient(circle, rgba(255,255,255,0.07) 1px, transparent 1px);
+      background-size: 22px 22px;
+    }
+
+    /* ── Urgency badge pulse ── */
+    .urgency-badge { animation: urgencyPop 2.2s ease-in-out infinite; }
+    @keyframes urgencyPop {
+      0%, 100% { transform: scale(1);    opacity: 1; }
+      50%       { transform: scale(1.04); opacity: 0.88; }
+    }
+
+    /* ── WhatsApp ripple ── */
+    .wa-ripple { animation: waRipple 2.8s ease-out infinite; }
+    @keyframes waRipple {
+      0%,100% { box-shadow: 0 0 0 0   rgba(37,211,102,.5), 0 4px 20px rgba(37,211,102,.3); }
+      60%      { box-shadow: 0 0 0 16px rgba(37,211,102,0), 0 4px 20px rgba(37,211,102,.3); }
+    }
+
+    /* ── Scroll animations ── */
+    .anim-fade-up {
+      opacity: 0; transform: translateY(32px);
+      transition: opacity .65s cubic-bezier(.25,.8,.25,1), transform .65s cubic-bezier(.25,.8,.25,1);
+    }
+    .anim-fade-left {
+      opacity: 0; transform: translateX(-28px);
+      transition: opacity .65s cubic-bezier(.25,.8,.25,1), transform .65s cubic-bezier(.25,.8,.25,1);
+    }
+    .anim-fade-right {
+      opacity: 0; transform: translateX(28px);
+      transition: opacity .65s cubic-bezier(.25,.8,.25,1), transform .65s cubic-bezier(.25,.8,.25,1);
+    }
+    .anim-visible { opacity: 1 !important; transform: translate(0,0) !important; }
+    .delay-1 { transition-delay: .10s; }
+    .delay-2 { transition-delay: .20s; }
+    .delay-3 { transition-delay: .30s; }
+    .delay-4 { transition-delay: .40s; }
+
+    /* ── Nav ── */
+    #mobile-menu { max-height: 0; overflow: hidden; transition: max-height .32s ease-out; }
+    #mobile-menu.open { max-height: 380px; }
+    .nav-link { position: relative; padding-bottom: 2px; transition: color .2s; }
+    .nav-link::after {
+      content: ''; position: absolute; bottom: -3px; left: 0;
+      width: 0; height: 2px; background: #d97706; transition: width .25s ease;
+    }
+    .nav-link:hover::after, .nav-link.active::after { width: 100%; }
+    .nav-link.active { color: #b45309; }
+
+    /* ── Section label pill ── */
+    .section-pill {
+      display: inline-block; background: #fef3c7; color: #b45309;
+      font-weight: 700; font-size: 0.7rem; letter-spacing: .12em;
+      text-transform: uppercase; padding: 5px 16px; border-radius: 999px; margin-bottom: 14px;
+    }
+
+    /* ── Gallery grid ── */
+    .gallery-grid {
+      display: grid; grid-template-columns: 1fr 1fr; grid-auto-rows: 170px; gap: 10px;
+    }
+    .gallery-grid .g-main { grid-column: span 2; height: 230px; }
+    @media (min-width: 640px) {
+      .gallery-grid { grid-template-columns: 2fr 1fr 1fr; grid-auto-rows: 180px; }
+      .gallery-grid .g-main { grid-column: span 1; grid-row: span 2; height: auto; }
+    }
+    .g-img {
+      border-radius: 14px; overflow: hidden;
+      background: linear-gradient(135deg, #fef3c7, #fde68a);
+    }
+    .g-img img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .4s ease; }
+    .g-img:hover img { transform: scale(1.05); }
+    .g-img .ph {
+      width: 100%; height: 100%; display: none; flex-direction: column;
+      align-items: center; justify-content: center;
+      color: #92400e; font-size: .75rem; font-weight: 600; text-align: center; gap: 6px; padding: 12px;
+    }
+    .g-img img.broken { display: none; }
+    .g-img img.broken + .ph { display: flex; }
+
+    /* ── Capacity cards ── */
+    .cap-card {
+      border: 2px solid #fde68a; border-radius: 18px; overflow: hidden; background: #fff;
+      transition: transform .2s, box-shadow .2s;
+    }
+    .cap-card:hover { transform: translateY(-4px); box-shadow: 0 12px 36px rgba(217,119,6,.18); }
+
+    /* ── Feature cards ── */
+    .feature-card {
+      background: #fff; border-radius: 18px; padding: 24px; text-align: center;
+      border: 1.5px solid #f3f4f6; box-shadow: 0 2px 10px rgba(0,0,0,.05);
+      transition: transform .2s, box-shadow .2s;
+    }
+    .feature-card:hover { transform: translateY(-5px); box-shadow: 0 14px 38px rgba(0,0,0,.1); }
+
+    /* ── Review cards ── */
+    .review-card {
+      background: #fff; border: 1.5px solid #e7e5e4; border-radius: 18px; padding: 22px;
+      transition: transform .2s, box-shadow .2s;
+    }
+    .review-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,.09); }
+    .stars { color: #f59e0b; }
+
+    /* ── Booking form ── */
+    .booking-card { background: #fff; border-radius: 24px; box-shadow: 0 24px 64px rgba(0,0,0,.12); overflow: hidden; }
+    .form-label { display: block; font-size: .85rem; font-weight: 600; color: #44403c; margin-bottom: 7px; }
+    .form-input {
+      width: 100%; padding: 13px 16px; border: 2px solid #e7e5e4; border-radius: 12px;
+      font-family: 'DM Sans', sans-serif; font-size: .95rem; background: #fafaf9; color: #1c1917;
+      outline: none; transition: border-color .2s, box-shadow .2s, background .2s;
+      -webkit-appearance: none; appearance: none;
+    }
+    .form-input:focus { border-color: #d97706; box-shadow: 0 0 0 3px rgba(217,119,6,.12); background: #fff; }
+    .form-input.is-error { border-color: #ef4444; }
+    .form-input.is-error:focus { box-shadow: 0 0 0 3px rgba(239,68,68,.12); }
+    .error-text { color: #ef4444; font-size: .78rem; margin-top: 5px; display: none; }
+    .error-text.show { display: block; }
+
+    /* ── Submit button ── */
+    .btn-submit {
+      width: 100%; padding: 16px;
+      background: linear-gradient(135deg, #25d366, #1ead53);
+      color: #fff; font-family: 'DM Sans', sans-serif; font-size: 1rem; font-weight: 700;
+      border: none; border-radius: 14px; cursor: pointer;
+      display: flex; align-items: center; justify-content: center; gap: 10px;
+      transition: opacity .2s, transform .15s; letter-spacing: .01em;
+    }
+    .btn-submit:hover:not(:disabled) { opacity: .92; transform: translateY(-1px); }
+    .btn-submit:active:not(:disabled) { transform: scale(.99); }
+    .btn-submit:disabled { opacity: .6; cursor: not-allowed; }
+
+    /* ── Price strikethrough ── */
+    .price-old { text-decoration: line-through; color: #a8a29e; }
+
+    /* ── Section divider ── */
+    .amber-divider {
+      height: 3px; border: none;
+      background: linear-gradient(90deg, transparent, #d97706 25%, #f59e0b 50%, #d97706 75%, transparent);
+      margin: 0;
+    }
+
+    /* ── Maps iframe ── */
+    .maps-frame { width: 100%; height: 280px; border: 0; border-radius: 16px; display: block; }
+
+    /* ── Floating buttons ── */
+    .floating-ctas {
+      position: fixed; bottom: 22px; right: 14px; z-index: 200;
+      display: flex; flex-direction: column; align-items: flex-end; gap: 10px;
+    }
+    .float-btn {
+      display: flex; align-items: center; gap: 8px; padding: 12px 18px; border-radius: 999px;
+      font-family: 'DM Sans', sans-serif; font-weight: 700; font-size: .85rem;
+      color: #fff; text-decoration: none; box-shadow: 0 4px 18px rgba(0,0,0,.22);
+      transition: transform .15s, opacity .15s;
+    }
+    .float-btn:hover  { transform: translateY(-2px); opacity: .93; }
+    .float-btn:active { transform: scale(.97); }
+    .float-wa   { background: #25d366; }
+    .float-call { background: #0ea5e9; }
+
+    /* ── Spinner ── */
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .spinner {
+      width: 20px; height: 20px; border: 2.5px solid rgba(255,255,255,.4);
+      border-top-color: #fff; border-radius: 50%; animation: spin .7s linear infinite;
+      display: inline-block; flex-shrink: 0;
+    }
+  </style>
+</head>
+
+<body class="overflow-x-hidden">
+
+<!-- ════════════════════════════════
+     ANNOUNCEMENT BAR
+════════════════════════════════ -->
+<div class="announcement-bar text-white text-center py-2.5 px-4 text-xs sm:text-sm font-bold tracking-wide">
+  🎉 25% OFF on Online Booking &nbsp;|&nbsp; ऑनलाइन बुकिंग पर 25% छूट &nbsp;|&nbsp; 🔥 Only 4 Rooms Available
+</div>
+
+<!-- ════════════════════════════════
+     STICKY NAVIGATION
+════════════════════════════════ -->
+<header class="sticky top-0 z-50 bg-white/96 backdrop-blur-md border-b border-stone-100 shadow-sm">
+  <div class="max-w-5xl mx-auto px-4 h-16 flex items-center justify-between">
+
+    <a href="#home" class="flex flex-col leading-none">
+      <span class="font-display text-lg sm:text-xl font-bold text-amber-900">🏨 Haji Guest House</span>
+      <span class="text-xs text-amber-600 font-medium">Bhagalpur, Bihar</span>
+    </a>
+
+    <nav class="hidden md:flex items-center gap-7 text-sm font-semibold text-stone-600">
+      <a href="#home"    class="nav-link hover:text-amber-700">Home</a>
+      <a href="#rooms"   class="nav-link hover:text-amber-700">Rooms</a>
+      <a href="#reviews" class="nav-link hover:text-amber-700">Reviews</a>
+      <a href="#contact" class="nav-link hover:text-amber-700">Contact</a>
+      <a href="#booking" class="bg-amber-700 text-white px-5 py-2.5 rounded-full font-bold hover:bg-amber-800 transition text-sm shadow-sm">
+        Book Now →
+      </a>
+    </nav>
+
+    <button id="hamburger" aria-label="Toggle navigation"
+            class="md:hidden p-2 rounded-xl text-stone-700 hover:bg-amber-50 transition">
+      <svg id="ham-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+      <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"/>
+      </svg>
+    </button>
+  </div>
+
+  <div id="mobile-menu" class="md:hidden bg-white border-t border-stone-100">
+    <nav class="px-4 py-3 flex flex-col gap-1">
+      <a href="#home"    onclick="closeMenu()" class="px-4 py-3 rounded-xl font-semibold text-stone-700 hover:bg-amber-50 hover:text-amber-800 transition">🏠 Home</a>
+      <a href="#rooms"   onclick="closeMenu()" class="px-4 py-3 rounded-xl font-semibold text-stone-700 hover:bg-amber-50 hover:text-amber-800 transition">🛏️ Rooms</a>
+      <a href="#reviews" onclick="closeMenu()" class="px-4 py-3 rounded-xl font-semibold text-stone-700 hover:bg-amber-50 hover:text-amber-800 transition">⭐ Reviews</a>
+      <a href="#contact" onclick="closeMenu()" class="px-4 py-3 rounded-xl font-semibold text-stone-700 hover:bg-amber-50 hover:text-amber-800 transition">📍 Contact</a>
+      <a href="#booking" onclick="closeMenu()" class="mt-1 px-4 py-3.5 bg-amber-700 text-white rounded-xl font-bold text-center hover:bg-amber-800 transition">
+        📅 Book Now (बुक करें)
+      </a>
+    </nav>
+  </div>
+</header>
+
+
+<!-- ════════════════════════════════
+     HERO SECTION
+════════════════════════════════ -->
+<section id="home" class="hero-gradient relative overflow-hidden">
+  <div class="hero-dot-pattern absolute inset-0 pointer-events-none"></div>
+  <div class="absolute -top-24 -left-24 w-80 h-80 rounded-full bg-white/5"></div>
+  <div class="absolute -bottom-16 -right-16 w-72 h-72 rounded-full bg-amber-300/10"></div>
+
+  <div class="relative z-10 max-w-3xl mx-auto px-5 py-16 sm:py-20 md:py-24 text-center text-white">
+
+    <div class="urgency-badge inline-flex items-center gap-2 bg-red-500 text-white text-xs sm:text-sm font-bold px-4 py-2 rounded-full mb-6 shadow-lg">
+      🔥 Only 4 Rooms Available — Book Fast!
+    </div>
+
+    <h1 class="font-display text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-2">
+      Haji Guest House
+    </h1>
+    <p class="text-amber-200 text-xs tracking-[.18em] uppercase font-semibold mb-4">
+      ✦ Near Railway Station &nbsp;·&nbsp; Bhagalpur, Bihar ✦
+    </p>
+    <p class="text-amber-50 text-xl sm:text-2xl font-medium mb-10">
+      Affordable Stay. Clean Rooms. Instant Booking.
+    </p>
+
+    <!-- Price display -->
+    <div class="inline-block bg-white/15 backdrop-blur-sm border border-white/20 rounded-2xl px-6 sm:px-8 py-5 mb-10">
+      <div class="flex items-center justify-center gap-5">
+        <div class="text-center">
+          <p class="text-amber-200 text-xs font-semibold mb-0.5">Walk-in Price</p>
+          <p class="price-old text-amber-200 text-2xl font-bold">₹999</p>
+          <p class="text-amber-300 text-[10px]">per night</p>
+        </div>
+        <div class="w-px h-14 bg-white/25"></div>
+        <div class="text-center">
+          <p class="text-amber-100 text-xs font-semibold mb-0.5">Online Booking</p>
+          <p class="text-white text-4xl sm:text-5xl font-extrabold leading-none">₹749</p>
+          <p class="text-amber-200 text-[10px]">per night</p>
+        </div>
+        <div class="bg-red-500 text-white text-sm sm:text-base font-extrabold px-3 py-2.5 rounded-xl leading-tight text-center shadow-md">
+          25%<br>OFF
+        </div>
+      </div>
+      <p class="text-amber-200 text-xs mt-3">ऑनलाइन बुकिंग पर 25% की छूट</p>
+    </div>
+
+    <!-- CTA buttons -->
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
+      <a href="https://wa.me/919876543210?text=Hello%2C%20I%20want%20to%20book%20a%20room%20at%20Haji%20Guest%20House%2C%20Bhagalpur."
+         target="_blank" rel="noopener"
+         class="wa-ripple w-full sm:w-auto flex items-center justify-center gap-2.5 bg-[#25D366] hover:bg-green-500 text-white font-extrabold py-4 px-7 rounded-2xl text-base shadow-xl transition">
+        <svg class="w-5 h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+        WhatsApp Now (बुक करें)
+      </a>
+      <a href="#booking" class="w-full sm:w-auto flex items-center justify-center gap-2 bg-white text-amber-900 font-extrabold py-4 px-7 rounded-2xl text-base shadow-xl hover:bg-amber-50 transition">
+        📅 Book Your Room Now
+      </a>
+    </div>
+  </div>
+
+  <!-- Wave -->
+  <div class="relative -mb-1">
+    <svg viewBox="0 0 1440 44" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" class="w-full block" style="height:44px;">
+      <path d="M0,22 C240,44 480,0 720,22 C960,44 1200,0 1440,22 L1440,44 L0,44 Z" fill="#ffffff"/>
+    </svg>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════
+     TRUST STRIP
+════════════════════════════════ -->
+<div class="bg-amber-900 py-3.5 px-4">
+  <ul class="max-w-5xl mx-auto flex flex-wrap justify-center gap-x-6 gap-y-1 text-xs sm:text-sm font-semibold text-amber-100">
+    <li>🚂 Near Railway Station</li>
+    <li>🧹 Cleaned After Every Stay</li>
+    <li>💰 Lowest Budget Price</li>
+    <li>🛡️ Safe &amp; Verified</li>
+    <li>⚡ Instant WhatsApp Confirmation</li>
+  </ul>
+</div>
+
+
+<!-- ════════════════════════════════
+     ROOMS — GALLERY + CAPACITY
+════════════════════════════════ -->
+<section id="rooms" class="py-16 px-4">
+  <div class="max-w-5xl mx-auto">
+
+    <div class="text-center mb-10 anim-fade-up">
+      <span class="section-pill">Our Rooms</span>
+      <h2 class="font-display text-3xl sm:text-4xl font-bold text-amber-900 mb-3">Single Non-AC Rooms</h2>
+      <p class="text-stone-500 max-w-lg mx-auto text-sm sm:text-base">
+        Clean, comfortable rooms — perfect for railway travelers, solo guests, and small groups.
+      </p>
+    </div>
+
+    <!-- Gallery -->
+    <div class="gallery-grid anim-fade-up delay-1 mb-12">
+      <div class="g-img g-main">
+        <img src="images/room1.jpg" alt="Haji Guest House room" onerror="this.classList.add('broken')">
+        <div class="ph"><span style="font-size:2rem">📷</span><span>Add photo here</span><code style="background:#fff4;padding:3px 8px;border-radius:6px;font-size:.7rem">images/room1.jpg</code></div>
+      </div>
+      <div class="g-img">
+        <img src="images/room2.jpg" alt="Room interior" onerror="this.classList.add('broken')">
+        <div class="ph"><span style="font-size:1.6rem">📷</span><code style="background:#fff4;padding:3px 8px;border-radius:6px;font-size:.7rem">images/room2.jpg</code></div>
+      </div>
+      <div class="g-img">
+        <img src="images/room3.jpg" alt="Room bed" onerror="this.classList.add('broken')">
+        <div class="ph"><span style="font-size:1.6rem">📷</span><code style="background:#fff4;padding:3px 8px;border-radius:6px;font-size:.7rem">images/room3.jpg</code></div>
+      </div>
+      <div class="g-img">
+        <img src="images/room4.jpg" alt="Bathroom" onerror="this.classList.add('broken')">
+        <div class="ph"><span style="font-size:1.6rem">📷</span><code style="background:#fff4;padding:3px 8px;border-radius:6px;font-size:.7rem">images/room4.jpg</code></div>
+      </div>
+      <div class="g-img">
+        <img src="images/room5.jpg" alt="Entrance" onerror="this.classList.add('broken')">
+        <div class="ph"><span style="font-size:1.6rem">📷</span><code style="background:#fff4;padding:3px 8px;border-radius:6px;font-size:.7rem">images/room5.jpg</code></div>
+      </div>
+    </div>
+
+    <!-- Room capacity -->
+    <div class="anim-fade-up delay-2">
+      <h3 class="font-display text-2xl sm:text-3xl font-bold text-amber-900 text-center mb-6">Room Capacity &amp; Pricing</h3>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 max-w-2xl mx-auto mb-6">
+        <div class="cap-card">
+          <div class="bg-gradient-to-r from-amber-800 to-amber-700 text-white px-5 py-4 flex items-center justify-between">
+            <div><p class="font-bold text-base">Type A Room</p><p class="text-amber-200 text-xs">Standard Non-AC</p></div>
+            <span class="bg-white text-amber-800 text-xs font-extrabold px-3 py-1 rounded-full">3 Rooms</span>
+          </div>
+          <div class="px-5 py-5">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="text-3xl">👥</span>
+              <div><p class="font-bold text-stone-800 text-lg">Up to 3 Guests</p><p class="text-stone-500 text-xs">Ideal for groups &amp; families</p></div>
+            </div>
+            <div class="flex items-center justify-between border-t border-stone-100 pt-3">
+              <span class="text-stone-500 text-sm">Per night</span>
+              <div class="text-right"><span class="price-old text-xs mr-1">₹999</span><span class="text-amber-700 font-extrabold text-2xl">₹749</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cap-card">
+          <div class="bg-gradient-to-r from-amber-700 to-amber-500 text-white px-5 py-4 flex items-center justify-between">
+            <div><p class="font-bold text-base">Type B Room</p><p class="text-amber-200 text-xs">Standard Non-AC</p></div>
+            <span class="bg-white text-amber-700 text-xs font-extrabold px-3 py-1 rounded-full">1 Room</span>
+          </div>
+          <div class="px-5 py-5">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="text-3xl">👫</span>
+              <div><p class="font-bold text-stone-800 text-lg">Up to 2 Guests</p><p class="text-stone-500 text-xs">Perfect for couples or pairs</p></div>
+            </div>
+            <div class="flex items-center justify-between border-t border-stone-100 pt-3">
+              <span class="text-stone-500 text-sm">Per night</span>
+              <div class="text-right"><span class="price-old text-xs mr-1">₹999</span><span class="text-amber-700 font-extrabold text-2xl">₹749</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="max-w-2xl mx-auto bg-amber-50 border border-amber-200 rounded-2xl px-5 py-4 text-sm text-amber-900 text-center font-medium mb-5">
+        🏨 <strong>Total: 4 Rooms</strong> &nbsp;|&nbsp; 3 rooms (max 3 guests each) &nbsp;+&nbsp; 1 room (max 2 guests)
+      </div>
+
+      <div class="max-w-2xl mx-auto bg-white border border-stone-100 rounded-2xl p-5 shadow-sm">
+        <h4 class="font-bold text-amber-900 mb-4">What's Included in Every Room</h4>
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-y-3 gap-x-4 text-sm text-stone-700">
+          <span class="flex items-center gap-2">✅ Clean Bed &amp; Linen</span>
+          <span class="flex items-center gap-2">✅ Ceiling Fan</span>
+          <span class="flex items-center gap-2">✅ Attached Bathroom</span>
+          <span class="flex items-center gap-2">✅ 24/7 Check-in</span>
+          <span class="flex items-center gap-2">✅ Safe Storage</span>
+          <span class="flex items-center gap-2">✅ Power Backup</span>
+          <span class="flex items-center gap-2">✅ Daily Housekeeping</span>
+          <span class="flex items-center gap-2">✅ Drinking Water</span>
+          <span class="flex items-center gap-2">✅ Luggage Storage</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="amber-divider" />
+
+
+<!-- ════════════════════════════════
+     WHY CHOOSE US
+════════════════════════════════ -->
+<section class="py-16 px-4 bg-amber-50">
+  <div class="max-w-5xl mx-auto">
+    <div class="text-center mb-10 anim-fade-up">
+      <span class="section-pill">Why Us</span>
+      <h2 class="font-display text-3xl sm:text-4xl font-bold text-amber-900">Why Guests Choose Haji Guest House</h2>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+      <div class="feature-card anim-fade-up delay-1">
+        <div class="w-14 h-14 bg-amber-100 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-4">🚂</div>
+        <h3 class="font-display font-bold text-lg text-amber-900 mb-2">Steps from Station</h3>
+        <p class="text-stone-500 text-sm leading-relaxed">Minutes away from Bhagalpur Railway Station. No auto or taxi needed — just walk in.</p>
+      </div>
+      <div class="feature-card anim-fade-up delay-2">
+        <div class="w-14 h-14 bg-amber-100 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-4">💰</div>
+        <h3 class="font-display font-bold text-lg text-amber-900 mb-2">Lowest Price</h3>
+        <p class="text-stone-500 text-sm leading-relaxed">₹749/night online. No hidden charges. Get 25% off every time you book online.</p>
+      </div>
+      <div class="feature-card anim-fade-up delay-3">
+        <div class="w-14 h-14 bg-amber-100 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-4">🧹</div>
+        <h3 class="font-display font-bold text-lg text-amber-900 mb-2">Always Clean</h3>
+        <p class="text-stone-500 text-sm leading-relaxed">Rooms cleaned and linen changed after every checkout. Fresh start for every guest.</p>
+      </div>
+      <div class="feature-card anim-fade-up delay-1">
+        <div class="w-14 h-14 bg-amber-100 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-4">🛡️</div>
+        <h3 class="font-display font-bold text-lg text-amber-900 mb-2">Safe &amp; Verified</h3>
+        <p class="text-stone-500 text-sm leading-relaxed">ID verification at check-in. Trusted and secure environment for all guests.</p>
+      </div>
+      <div class="feature-card anim-fade-up delay-2">
+        <div class="w-14 h-14 bg-amber-100 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-4">⚡</div>
+        <h3 class="font-display font-bold text-lg text-amber-900 mb-2">Instant Reply</h3>
+        <p class="text-stone-500 text-sm leading-relaxed">Book via WhatsApp and get a reply within minutes. No waiting, no confusion.</p>
+      </div>
+      <div class="feature-card anim-fade-up delay-3">
+        <div class="w-14 h-14 bg-amber-100 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-4">📞</div>
+        <h3 class="font-display font-bold text-lg text-amber-900 mb-2">Always Available</h3>
+        <p class="text-stone-500 text-sm leading-relaxed">Call or WhatsApp any time — day or night. We're here to help you settle in.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="amber-divider" />
+
+
+<!-- ════════════════════════════════
+     CUSTOMER REVIEWS
+════════════════════════════════ -->
+<section id="reviews" class="py-16 px-4">
+  <div class="max-w-5xl mx-auto">
+    <div class="text-center mb-10 anim-fade-up">
+      <span class="section-pill">Guest Reviews</span>
+      <h2 class="font-display text-3xl sm:text-4xl font-bold text-amber-900 mb-2">What Our Guests Say</h2>
+      <p class="text-amber-700 text-sm font-semibold bg-amber-50 border border-amber-200 rounded-xl px-4 py-2 inline-block">
+        ✏️ Replace the 3 placeholders below with real guest testimonials
+      </p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+
+      <!-- Review 1 — REPLACE WITH REAL REVIEW -->
+      <div class="review-card anim-fade-up delay-1">
+        <div class="flex items-start justify-between mb-3">
+          <div class="flex items-center gap-3">
+            <!-- Change letter to guest's initial -->
+            <div class="w-11 h-11 rounded-full bg-amber-100 flex items-center justify-center text-amber-800 font-extrabold text-lg flex-shrink-0">G</div>
+            <div>
+              <!-- Replace with real name and city -->
+              <p class="font-bold text-stone-800 text-sm">Guest Name</p>
+              <p class="text-stone-400 text-xs">City, State</p>
+            </div>
+          </div>
+          <!-- Change stars: ★★★★★ or ★★★★☆ -->
+          <span class="stars text-base">★★★★★</span>
+        </div>
+        <!-- Replace with actual review text -->
+        <p class="text-stone-600 text-sm leading-relaxed italic">
+          "Replace with a real guest review. Ask guests to share feedback on WhatsApp and paste it here."
+        </p>
+        <p class="text-stone-400 text-xs mt-3">Month Year</p>
+      </div>
+
+      <!-- Review 2 — REPLACE WITH REAL REVIEW -->
+      <div class="review-card anim-fade-up delay-2">
+        <div class="flex items-start justify-between mb-3">
+          <div class="flex items-center gap-3">
+            <div class="w-11 h-11 rounded-full bg-amber-100 flex items-center justify-center text-amber-800 font-extrabold text-lg flex-shrink-0">G</div>
+            <div>
+              <p class="font-bold text-stone-800 text-sm">Guest Name</p>
+              <p class="text-stone-400 text-xs">City, State</p>
+            </div>
+          </div>
+          <span class="stars text-base">★★★★★</span>
+        </div>
+        <p class="text-stone-600 text-sm leading-relaxed italic">
+          "Replace with a real guest review. Ask guests to share feedback on WhatsApp and paste it here."
+        </p>
+        <p class="text-stone-400 text-xs mt-3">Month Year</p>
+      </div>
+
+      <!-- Review 3 — REPLACE WITH REAL REVIEW -->
+      <div class="review-card anim-fade-up delay-3">
+        <div class="flex items-start justify-between mb-3">
+          <div class="flex items-center gap-3">
+            <div class="w-11 h-11 rounded-full bg-amber-100 flex items-center justify-center text-amber-800 font-extrabold text-lg flex-shrink-0">G</div>
+            <div>
+              <p class="font-bold text-stone-800 text-sm">Guest Name</p>
+              <p class="text-stone-400 text-xs">City, State</p>
+            </div>
+          </div>
+          <span class="stars text-base">★★★★☆</span>
+        </div>
+        <p class="text-stone-600 text-sm leading-relaxed italic">
+          "Replace with a real guest review. Ask guests to share feedback on WhatsApp and paste it here."
+        </p>
+        <p class="text-stone-400 text-xs mt-3">Month Year</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<hr class="amber-divider" />
+
+
+<!-- ════════════════════════════════
+     BOOKING FORM
+════════════════════════════════ -->
+<section id="booking" class="py-16 px-4 bg-amber-50">
+  <div class="max-w-xl mx-auto">
+
+    <div class="text-center mb-8 anim-fade-up">
+      <span class="section-pill">Book Now</span>
+      <h2 class="font-display text-3xl sm:text-4xl font-bold text-amber-900 mb-2">Book Your Room</h2>
+      <p class="text-stone-500 text-sm sm:text-base">Fill in your details — you'll be redirected to WhatsApp instantly.</p>
+      <div class="mt-4 bg-white border border-amber-200 rounded-xl px-4 py-3 text-xs sm:text-sm text-amber-900 font-medium">
+        🏨 <strong>4 Rooms total</strong>: &nbsp;3 rooms (max 3 guests) &nbsp;·&nbsp; 1 room (max 2 guests)
+      </div>
+    </div>
+
+    <div class="booking-card anim-fade-up delay-1">
+
+      <!-- Header -->
+      <div class="bg-gradient-to-r from-amber-900 to-amber-700 px-6 py-5 text-white">
+        <div class="flex items-center justify-between">
+          <div>
+            <p class="font-display font-bold text-lg leading-tight">Haji Guest House</p>
+            <p class="text-amber-200 text-xs mt-0.5">Single Non-AC · Bhagalpur</p>
+          </div>
+          <div class="text-right">
+            <p class="price-old text-amber-300 text-sm">₹999</p>
+            <p class="text-white font-extrabold text-2xl leading-none">₹749<span class="text-amber-300 text-sm font-normal">/night</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <div class="px-6 py-7">
+        <form id="bookingForm" novalidate>
+
+          <!-- Name -->
+          <div class="mb-5">
+            <label class="form-label" for="guestName">Full Name <span class="text-red-500">*</span></label>
+            <input type="text" id="guestName" class="form-input" placeholder="Enter your full name" autocomplete="name" />
+            <p class="error-text" id="nameError">Please enter your name (min 2 characters)</p>
+          </div>
+
+          <!-- Phone -->
+          <div class="mb-5">
+            <label class="form-label" for="guestPhone">Phone Number <span class="text-red-500">*</span></label>
+            <input type="tel" id="guestPhone" class="form-input" placeholder="+91 XXXXX XXXXX" maxlength="15" autocomplete="tel" />
+            <p class="error-text" id="phoneError">Please enter a valid 10-digit phone number</p>
+          </div>
+
+          <!-- Dates -->
+          <div class="grid grid-cols-2 gap-4 mb-5">
+            <div>
+              <label class="form-label" for="checkIn">Check-in <span class="text-red-500">*</span></label>
+              <input type="date" id="checkIn" class="form-input" />
+              <p class="error-text" id="checkinError">Select check-in date</p>
+            </div>
+            <div>
+              <label class="form-label" for="checkOut">Check-out <span class="text-red-500">*</span></label>
+              <input type="date" id="checkOut" class="form-input" />
+              <p class="error-text" id="checkoutError">Select check-out date</p>
+            </div>
+          </div>
+
+          <!-- Guests -->
+          <div class="mb-6">
+            <label class="form-label" for="numGuests">Number of Guests <span class="text-red-500">*</span></label>
+            <select id="numGuests" class="form-input">
+              <option value="">Select number of guests</option>
+              <option value="1">1 Guest</option>
+              <option value="2">2 Guests</option>
+              <option value="3">3 Guests (max for Type A room)</option>
+            </select>
+            <p class="error-text" id="guestsError">Please select number of guests</p>
+          </div>
+
+          <!-- Submit button -->
+          <button type="submit" class="btn-submit" id="submitBtn">
+            <svg class="w-5 h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            Send Booking Request on WhatsApp
+          </button>
+
+          <!-- Notices -->
+          <div class="mt-5 space-y-2 text-xs text-stone-500">
+            <div class="flex gap-2 bg-stone-50 rounded-xl p-3 border border-stone-100">
+              <span class="flex-shrink-0">🪪</span>
+              <span><strong class="text-stone-700">ID Required:</strong> Valid ID proof (Aadhaar / Govt. ID) required at check-in.</span>
+            </div>
+            <div class="flex gap-2 bg-stone-50 rounded-xl p-3 border border-stone-100">
+              <span class="flex-shrink-0">💳</span>
+              <span><strong class="text-stone-700">Advance via UPI:</strong> Required after confirmation. Send screenshot on WhatsApp.</span>
+            </div>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════
+     HOW BOOKING WORKS
+════════════════════════════════ -->
+<section class="py-14 px-4 bg-white">
+  <div class="max-w-2xl mx-auto anim-fade-up">
+    <h3 class="font-display text-2xl sm:text-3xl font-bold text-amber-900 text-center mb-8">💳 How Booking Works</h3>
+    <div class="space-y-5">
+      <div class="flex gap-4 items-start">
+        <div class="w-9 h-9 rounded-full bg-amber-700 text-white flex items-center justify-center font-bold text-sm flex-shrink-0 mt-0.5 shadow-md">1</div>
+        <div>
+          <p class="font-semibold text-stone-800">Fill the Form or Message on WhatsApp</p>
+          <p class="text-stone-500 text-sm">Submit your details above or send a direct WhatsApp message.</p>
+        </div>
+      </div>
+      <div class="flex gap-4 items-start">
+        <div class="w-9 h-9 rounded-full bg-amber-700 text-white flex items-center justify-center font-bold text-sm flex-shrink-0 mt-0.5 shadow-md">2</div>
+        <div>
+          <p class="font-semibold text-stone-800">Get Room Confirmation</p>
+          <p class="text-stone-500 text-sm">We'll confirm availability and share UPI payment details on WhatsApp.</p>
+        </div>
+      </div>
+      <div class="flex gap-4 items-start">
+        <div class="w-9 h-9 rounded-full bg-amber-700 text-white flex items-center justify-center font-bold text-sm flex-shrink-0 mt-0.5 shadow-md">3</div>
+        <div>
+          <p class="font-semibold text-stone-800">Pay Advance via UPI</p>
+          <p class="text-stone-500 text-sm">Send advance via Google Pay / PhonePe / Paytm. Simple UPI transfer — no payment gateway.</p>
+        </div>
+      </div>
+      <div class="flex gap-4 items-start">
+        <div class="w-9 h-9 rounded-full bg-amber-700 text-white flex items-center justify-center font-bold text-sm flex-shrink-0 mt-0.5 shadow-md">4</div>
+        <div>
+          <p class="font-semibold text-stone-800">Share ID + Payment Screenshot</p>
+          <p class="text-stone-500 text-sm">Send your Aadhaar/ID and payment proof on WhatsApp. Booking confirmed! ✅</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="amber-divider" />
+
+
+<!-- ════════════════════════════════
+     CONTACT SECTION
+════════════════════════════════ -->
+<section id="contact" class="py-16 px-4 bg-amber-50">
+  <div class="max-w-5xl mx-auto">
+    <div class="text-center mb-10 anim-fade-up">
+      <span class="section-pill">Contact</span>
+      <h2 class="font-display text-3xl sm:text-4xl font-bold text-amber-900">Get In Touch</h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
+
+      <!-- Contact cards -->
+      <div class="flex flex-col gap-4 anim-fade-left">
+        <div class="bg-white rounded-2xl p-5 border border-amber-100 shadow-sm">
+          <div class="flex items-start gap-3">
+            <span class="text-2xl flex-shrink-0 mt-0.5">📍</span>
+            <div>
+              <p class="font-bold text-amber-900 mb-1">Our Address</p>
+              <p class="text-stone-600 text-sm leading-relaxed">Near Railway Station,<br>Bhagalpur, Bihar — 812001,<br>India</p>
+            </div>
+          </div>
+        </div>
+
+        <a href="tel:+919876543210"
+           class="bg-white rounded-2xl p-5 border border-amber-100 shadow-sm flex items-center gap-4 hover:border-sky-300 hover:shadow-md transition group">
+          <div class="w-12 h-12 bg-sky-50 rounded-2xl flex items-center justify-center text-xl group-hover:bg-sky-500 group-hover:text-white transition flex-shrink-0">📞</div>
+          <div>
+            <p class="text-stone-400 text-xs font-semibold uppercase tracking-wide">Call Us Directly</p>
+            <p class="font-bold text-stone-800 text-lg">+91 98765 43210</p>
+          </div>
+          <span class="ml-auto text-sky-500 font-bold text-sm group-hover:text-sky-700">Call →</span>
+        </a>
+
+        <a href="https://wa.me/919876543210?text=Hello%2C%20I%20want%20to%20enquire%20about%20Haji%20Guest%20House%2C%20Bhagalpur."
+           target="_blank" rel="noopener"
+           class="bg-white rounded-2xl p-5 border border-amber-100 shadow-sm flex items-center gap-4 hover:border-green-300 hover:shadow-md transition group">
+          <div class="w-12 h-12 bg-green-50 rounded-2xl flex items-center justify-center text-xl group-hover:bg-green-500 group-hover:text-white transition flex-shrink-0">💬</div>
+          <div>
+            <p class="text-stone-400 text-xs font-semibold uppercase tracking-wide">WhatsApp Us</p>
+            <p class="font-bold text-stone-800 text-lg">+91 98765 43210</p>
+          </div>
+          <span class="ml-auto text-green-600 font-bold text-sm group-hover:text-green-700">Chat →</span>
+        </a>
+      </div>
+
+      <!-- Google Maps -->
+      <div class="anim-fade-right">
+        <div class="bg-white rounded-2xl overflow-hidden border border-amber-100 shadow-sm">
+          <iframe
+            class="maps-frame"
+            src="https://maps.google.com/maps?q=Bhagalpur+Railway+Station,+Bhagalpur,+Bihar&output=embed&z=15"
+            allowfullscreen="" loading="lazy"
+            title="Bhagalpur Railway Station — Haji Guest House location">
+          </iframe>
+          <div class="px-4 py-3 bg-amber-50 border-t border-amber-100 text-center text-xs text-amber-800 font-semibold">
+            📍 Haji Guest House — Near Bhagalpur Railway Station
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════
+     FOOTER
+════════════════════════════════ -->
+<footer class="bg-amber-950 text-white">
+  <div class="max-w-5xl mx-auto px-4 py-10">
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-7 mb-8">
+      <div>
+        <h3 class="font-display text-xl font-bold mb-2">🏨 Haji Guest House</h3>
+        <p class="text-amber-200 text-sm leading-relaxed">Affordable, clean stay near Bhagalpur Railway Station. Your trusted budget home away from home.</p>
+      </div>
+      <div>
+        <h4 class="text-amber-300 text-xs font-bold uppercase tracking-widest mb-3">Quick Links</h4>
+        <ul class="space-y-2 text-amber-200 text-sm">
+          <li><a href="#home"    class="hover:text-white transition">Home</a></li>
+          <li><a href="#rooms"   class="hover:text-white transition">Rooms</a></li>
+          <li><a href="#booking" class="hover:text-white transition">Book Now</a></li>
+          <li><a href="#contact" class="hover:text-white transition">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-amber-300 text-xs font-bold uppercase tracking-widest mb-3">Contact</h4>
+        <div class="space-y-1.5 text-amber-200 text-sm">
+          <p>📞 +91 98765 43210</p>
+          <p>💬 WhatsApp: +91 98765 43210</p>
+          <p>📍 Near Railway Station,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bhagalpur, Bihar 812001</p>
+        </div>
+        <a href="#booking" class="mt-4 inline-block bg-[#25D366] text-white text-sm font-bold px-5 py-2.5 rounded-xl hover:bg-green-500 transition shadow">
+          Book Now ↗
+        </a>
+      </div>
+    </div>
+    <div class="border-t border-amber-900 pt-5 text-center text-amber-400 text-xs">
+      © 2025 Haji Guest House, Bhagalpur. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+
+<!-- ════════════════════════════════
+     FLOATING BUTTONS
+════════════════════════════════ -->
+<div class="floating-ctas" role="complementary" aria-label="Quick contact">
+  <a href="tel:+919876543210" class="float-btn float-call" title="Call now">
+    <svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/>
+    </svg>
+    Call
+  </a>
+  <a href="https://wa.me/919876543210?text=Hello%2C%20I%20want%20to%20book%20a%20room%20at%20Haji%20Guest%20House%2C%20Bhagalpur."
+     target="_blank" rel="noopener" class="float-btn float-wa wa-ripple" title="WhatsApp">
+    <svg class="w-5 h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+    WhatsApp
+  </a>
+</div>
+
+
+<!-- ════════════════════════════════
+     JAVASCRIPT
+════════════════════════════════ -->
+<script>
+// ─────────────────────────────────────────────
+//  CONFIG — REPLACE BEFORE GOING LIVE
+// ─────────────────────────────────────────────
+const CONFIG = {
+  whatsappNumber: '919876543210', // ← Replace: 91 + 10-digit number, no spaces
+  guestHouseName: 'Haji Guest House, Bhagalpur'
+};
+
+// ─────────────────────────────────────────────
+//  NAVIGATION
+// ─────────────────────────────────────────────
+const hamburger  = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobile-menu');
+const hamIcon    = document.getElementById('ham-icon');
+const closeIcon  = document.getElementById('close-icon');
+
+hamburger.addEventListener('click', () => {
+  const isOpen = mobileMenu.classList.toggle('open');
+  hamIcon.classList.toggle('hidden', isOpen);
+  closeIcon.classList.toggle('hidden', !isOpen);
+});
+
+function closeMenu() {
+  mobileMenu.classList.remove('open');
+  hamIcon.classList.remove('hidden');
+  closeIcon.classList.add('hidden');
+}
+
+document.addEventListener('click', e => {
+  if (!hamburger.contains(e.target) && !mobileMenu.contains(e.target)) closeMenu();
+});
+
+// ─────────────────────────────────────────────
+//  DATE INPUTS
+// ─────────────────────────────────────────────
+(function initDates() {
+  const pad = n => String(n).padStart(2, '0');
+  const fmt = d => `${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`;
+
+  const today    = new Date();
+  const tomorrow = new Date(today);
+  tomorrow.setDate(tomorrow.getDate() + 1);
+
+  const inEl  = document.getElementById('checkIn');
+  const outEl = document.getElementById('checkOut');
+
+  inEl.min  = fmt(today);
+  outEl.min = fmt(tomorrow);
+
+  inEl.addEventListener('change', () => {
+    if (!inEl.value) return;
+    const nextDay = new Date(inEl.value + 'T00:00:00');
+    nextDay.setDate(nextDay.getDate() + 1);
+    outEl.min = fmt(nextDay);
+    if (outEl.value && outEl.value <= inEl.value) {
+      outEl.value = fmt(nextDay);
+    }
+  });
+})();
+
+// ─────────────────────────────────────────────
+//  FORM VALIDATION HELPERS
+// ─────────────────────────────────────────────
+function setError(inputId, msgId, show) {
+  document.getElementById(inputId).classList.toggle('is-error', show);
+  document.getElementById(msgId).classList.toggle('show', show);
+}
+
+function clearErrors() {
+  [
+    ['guestName',  'nameError'],
+    ['guestPhone', 'phoneError'],
+    ['checkIn',    'checkinError'],
+    ['checkOut',   'checkoutError'],
+    ['numGuests',  'guestsError'],
+  ].forEach(([i, m]) => setError(i, m, false));
+}
+
+function fmtDate(s) {
+  return new Date(s + 'T00:00:00').toLocaleDateString('en-IN', {
+    weekday: 'short', day: '2-digit', month: 'short', year: 'numeric'
+  });
+}
+
+// ─────────────────────────────────────────────
+//  FORM SUBMIT → WHATSAPP REDIRECT
+// ─────────────────────────────────────────────
+document.getElementById('bookingForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  clearErrors();
+
+  const name     = document.getElementById('guestName').value.trim();
+  const phone    = document.getElementById('guestPhone').value.trim();
+  const checkIn  = document.getElementById('checkIn').value;
+  const checkOut = document.getElementById('checkOut').value;
+  const guests   = document.getElementById('numGuests').value;
+
+  let valid = true;
+
+  if (!name || name.length < 2)
+    { setError('guestName',  'nameError',    true); valid = false; }
+  if (!phone || phone.replace(/[\s+\-()]/g, '').length < 10)
+    { setError('guestPhone', 'phoneError',   true); valid = false; }
+  if (!checkIn)
+    { setError('checkIn',    'checkinError', true); valid = false; }
+  if (!checkOut)
+    { setError('checkOut',   'checkoutError',true); valid = false; }
+  if (!guests)
+    { setError('numGuests',  'guestsError',  true); valid = false; }
+
+  if (!valid) return;
+
+  // Build WhatsApp message
+  const message =
+`Hello, I want to book a room at ${CONFIG.guestHouseName}.
+
+Name: ${name}
+Phone: ${phone}
+Check-in: ${fmtDate(checkIn)}
+Check-out: ${fmtDate(checkOut)}
+Guests: ${guests}
+
+Please confirm availability and share payment details. Thank you!`;
+
+  const waURL = `https://wa.me/${CONFIG.whatsappNumber}?text=${encodeURIComponent(message)}`;
+
+  // Optional Supabase call (uncomment if configured below):
+  // saveToSupabase({ name, phone, checkin: checkIn, checkout: checkOut, guests: parseInt(guests) });
+
+  // Loading state
+  const btn      = document.getElementById('submitBtn');
+  const origHTML = btn.innerHTML;
+  btn.disabled   = true;
+  btn.innerHTML  = '<div class="spinner"></div> Opening WhatsApp…';
+
+  setTimeout(() => {
+    window.open(waURL, '_blank');
+    btn.disabled  = false;
+    btn.innerHTML = origHTML;
+  }, 700);
+});
+
+// ─────────────────────────────────────────────
+//  SCROLL ANIMATIONS
+// ─────────────────────────────────────────────
+const scrollObs = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('anim-visible');
+      scrollObs.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.08, rootMargin: '0px 0px -36px 0px' });
+
+document.querySelectorAll('.anim-fade-up, .anim-fade-left, .anim-fade-right')
+        .forEach(el => scrollObs.observe(el));
+
+// ─────────────────────────────────────────────
+//  ACTIVE NAV HIGHLIGHT
+// ─────────────────────────────────────────────
+const navLinks   = document.querySelectorAll('.nav-link');
+const navSections = document.querySelectorAll('section[id]');
+
+const navObs = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      navLinks.forEach(l => l.classList.remove('active'));
+      const a = document.querySelector(`.nav-link[href="#${entry.target.id}"]`);
+      if (a) a.classList.add('active');
+    }
+  });
+}, { threshold: 0.35 });
+
+navSections.forEach(s => navObs.observe(s));
+
+
+// ══════════════════════════════════════════════════════════
+//  OPTIONAL: SUPABASE INTEGRATION
+//
+//  Setup steps:
+//  1. supabase.com → New project
+//  2. Table Editor → New table "bookings":
+//       id bigint PK auto | name text | phone text |
+//       checkin date | checkout date | guests int |
+//       created_at timestamptz default now()
+//  3. Auth → Policies → enable INSERT for anon role
+//  4. Settings → API → copy Project URL + anon key
+//  5. Paste below, uncomment block + uncomment call above
+// ══════════════════════════════════════════════════════════
+/*
+const SUPABASE_URL = 'https://YOUR_PROJECT.supabase.co';
+const SUPABASE_KEY = 'YOUR_ANON_KEY';
+
+async function saveToSupabase(data) {
+  try {
+    const res = await fetch(`${SUPABASE_URL}/rest/v1/bookings`, {
+      method: 'POST',
+      headers: {
+        'apikey':        SUPABASE_KEY,
+        'Authorization': `Bearer ${SUPABASE_KEY}`,
+        'Content-Type':  'application/json',
+        'Prefer':        'return=minimal'
+      },
+      body: JSON.stringify(data)
+    });
+    if (res.ok) console.log('✅ Saved to Supabase');
+    else        console.warn('Supabase error:', await res.text());
+  } catch (err) {
+    console.error('Supabase network error:', err);
+    // WhatsApp redirect still works even if Supabase fails
+  }
+}
+*/
+</script>
+
+</body>
+</html>
